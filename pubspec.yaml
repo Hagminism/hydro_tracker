@@ -1,5 +1,5 @@
 name: hydro_tracker
-description: "hydro_tracker"
+description: "자극물 섭취량 추적 및 관리 앱"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -35,6 +35,25 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  # 핵심 패키지
+  flutter_riverpod: ^2.5.1  # 상태 관리
+  sqflite: ^2.3.3+1  # SQLite 데이터베이스
+  fl_chart: ^0.69.0  # 차트 라이브러리
+  freezed_annotation: ^2.4.4  # 불변 객체 생성
+  json_annotation: ^4.9.0  # JSON 직렬화
+  get_it: ^7.7.0  # 의존성 주입
+  go_router: ^14.6.2  # 라우팅
+
+  # UI/UX 패키지
+  flutter_svg: ^2.0.10+1  # SVG 아이콘 지원
+  google_fonts: ^6.2.1  # Google Fonts
+  flutter_staggered_animations: ^1.1.1  # 애니메이션
+
+  # 유틸리티 패키지
+  flutter_secure_storage: ^9.2.2  # 보안 저장소
+  shared_preferences: ^2.2.3  # 설정 저장
+  path_provider: ^2.1.3  # 파일 경로 관리
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -45,6 +64,12 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+
+  # 개발 도구
+  build_runner: ^2.4.10  # 코드 생성 도구
+  freezed: ^2.5.7  # Freezed 코드 생성
+  json_serializable: ^6.8.0  # JSON 직렬화 코드 생성
+  sqflite_common_ffi: ^2.3.2  # 테스트용 SQLite FFI
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
